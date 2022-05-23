@@ -14,10 +14,11 @@ For a complete list of supported commands, type
 
 `python TrainDecoyDistribution.py -h`
 
+To load an existing model, run
 
+`python ExampleDecoyDistributionLoad -f FILENAME`
 
-
-
+This script plots samples from the loaded decoy distribtion as well as a histogram of log-likelihoods
 
 ## Requirements
 
