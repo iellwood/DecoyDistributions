@@ -2,11 +2,14 @@
 Example code for loading decoy distributions from the paper,
  "Validating density estimation models with decoy distributions"
 
+Run it with
+
+``python ExampleDecoyDistributionLoad.py -f ModelFileName``
+
 Written in tensorflow 1.15
 
 This file shows how to load one of the pretrained decoy distributions from a filename.
-It plots samples from the distribution sorted by log-likelihood and computes the distribution of log-probabilities using
-a histogram of sampled log-probabilities
+It plots samples from the distribution sorted by log-likelihood and a histogram of log-probabilities.
 """
 
 
@@ -14,19 +17,27 @@ from DecoyDistributionModel.DecoyDistribution import DecoyDistribution
 import tensorflow as tf
 import matplotlib.pyplot as plt
 import numpy as np
+import argparse
+
+
+parser = argparse.ArgumentParser(
+        description='Loads a pretrained decoy distribution model, plots samples from the distribution and plots a histogram of the the log-likelihoods of the distribution.')
+
+parser.add_argument("-f", "--filename", help="Path to the model saved data", required=True)
+
+args = parser.parse_args()
+
+filename = args.filename
 
 sess = tf.InteractiveSession()
-
-# Path to the model saved data
-filename = 'TrainedDecoyDistributions/CIFAR10/CIFAR10_Decoy_Width_12288.obj'
 
 # Create the decoy distribution
 decoy = DecoyDistribution(filename)
 
-tf.global_variables_initializer().run()
+tf.compat.v1.global_variables_initializer().run()
 
 # Initialize the variables using the saved values.
-# This line must be after tf.global_variables_initializer().run()
+# This line must be after tf.compat.v1.global_variables_initializer().run()
 decoy.initialize(sess)
 
 # Create a collection of images and their corresponding log-likelihoods
