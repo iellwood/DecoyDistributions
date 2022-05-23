@@ -22,7 +22,7 @@ Training times are quite variable (3-7 days on a Titan V GPU) because the number
 To load an existing model, use the DecoyDistribution class. For example,
 
 ```python
-import DecoyDistributionModel.DecoyDistribution
+from DecoyDistributionModel.DecoyDistribution import DecoyDistribution
 import tensorflow as tf
 
 filename = 'my_trained_decoy_distribution.obj'
