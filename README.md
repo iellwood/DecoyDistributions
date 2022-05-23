@@ -1,7 +1,10 @@
 Validating density estimation models with decoy distributions
 ============================================
 
-This repository provides 1) Code for loading pre-trained decoy distribution models 2) Code to train decoy distributions on either CIFAR10 or MNIST.
+This repository provides 
+
+1) Code for loading pre-trained decoy distribution models 
+2) Code to train decoy distributions on either CIFAR10 or MNIST.
 
 To download the pretrained model data, please download the "release" version of the repository, which includes a .zip file (~1 Gb) containing  the pretrained models.
 
