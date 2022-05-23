@@ -17,7 +17,7 @@ For a complete list of supported commands, type
 To load an existing model, use the DecoyDistribution class. For example,
 
 ```python
-import DecoyDistributionModel.DecoyDistribution`
+import DecoyDistributionModel.DecoyDistribution
 filename = 'my_trained_decoy_distribution.obj'
 sess = tf.InteractiveSession()
 decoy = DecoyDistribution(filename)
