@@ -1,7 +1,7 @@
 Validating density estimation models with decoy distributions
 ============================================
 
-This repository provides 
+This repository provides code and examples for the paper "Validating density estimation models with decoy distributions".
 
 1) Code for loading pre-trained decoy distribution models 
 2) Code to train decoy distributions on either CIFAR10 or MNIST.
