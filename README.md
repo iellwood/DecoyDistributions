@@ -27,6 +27,8 @@ tf.compat.v1.global_variables_initializer().run()
 decoy.initialize(sess)
 ```
 
+Once initialized, `decoy.generated_image` produces samples from the distribution and `decoy.log_p_of_generated_image` gives the log likelihoods. (Run them in the same `sess.run()` call to ensure that the log-likelihoods match with the samples).
+
 We have provided an example script that loads a decoy distribution given a filename,
 
 `python ExampleDecoyDistributionLoad -f FILENAME`
