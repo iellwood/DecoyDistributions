@@ -35,6 +35,6 @@ This script plots samples from the loaded decoy distribtion as well as a histogr
 
 ## Requirements
 
-All code was written in Python 3.6 and tensorflow 1.15, and requires the packages numpy, scipy, matplotlib and pickle
+All code was written in python 3.6 and tensorflow 1.15, and requires the packages numpy, scipy, matplotlib, seaborn and pickle
 
 
