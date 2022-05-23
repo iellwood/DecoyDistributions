@@ -9,7 +9,7 @@ To train a decoy distribution, use the command
 
 `python TrainDecoyDistribution.py -w Width -d Dataset -g GPU -b BatchSize`
 
-Width can be any positive number. Dataset can be either MNIST or CIFAR10. GPU specifies which GPU to use (default 0) and BatchSize defaults to 50.
+Width can be any positive number and determines the width of the uniform distribution of log-likelihoods. Dataset can be either MNIST or CIFAR10. GPU specifies which GPU to use (default 0) and BatchSize defaults to 50.
 For a complete list of supported commands, type
 
 `python TrainDecoyDistribution.py -h`
