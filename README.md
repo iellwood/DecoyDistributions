@@ -5,7 +5,7 @@ This repository provides 1) Code for loading pre-trained decoy distribution mode
 
 To download the pretrained model data, please download the "release" version of the repository, which includes a .zip file (~1 Gb) containing  the pretrained models.
 
-To train a decoy distribution, use the command
+To train a decoy distribution, use the command,
 
 `python TrainDecoyDistribution.py -w Width -d Dataset -g GPU -b BatchSize`
 
