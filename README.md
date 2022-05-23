@@ -5,6 +5,7 @@ This repository provides
 
 1) Code for loading pre-trained decoy distribution models 
 2) Code to train decoy distributions on either CIFAR10 or MNIST.
+3) Code to reproduce the main panels of figures 3 & 4 and the FID score plot in Figure 6.
 
 To download the pretrained model data, please download the "release" version of the repository, which includes a .zip file (~1 Gb) containing  the pretrained models.
 
@@ -39,6 +40,8 @@ We have provided an example script that loads a decoy distribution given a filen
 `python ExampleDecoyDistributionLoad -f FILENAME`
 
 This script plots samples from the loaded decoy distribtion as well as a histogram of log-likelihoods.
+
+Finally, we have included code to reproduce the main panels of Figures 3 & 4 and the FID score plot of figure 6 in `MakePlotsForFigures3And4.py`. Note that this file requires the seaborn package.
 
 ## Requirements
 
