@@ -17,6 +17,8 @@ For a complete list of supported commands, type
 
 `python TrainDecoyDistribution.py -h`
 
+Training times are quite variable (3-7 days on a Titan V GPU) because the number of generator steps for each discriminator step is varyied depending on how well the generator is learning. Particularly during the early phases of training, the generator may be trained hundreds or thousands of times for every discriminator step.
+
 To load an existing model, use the DecoyDistribution class. For example,
 
 ```python
